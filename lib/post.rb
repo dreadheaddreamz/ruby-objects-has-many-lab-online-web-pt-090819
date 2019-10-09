@@ -17,7 +17,7 @@ class Title
   end
   
   def author_name
-    if @author == nil
+    if @post == nil
       return nil
     else
       author.name
