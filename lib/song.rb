@@ -7,4 +7,6 @@ class Song
     @name = name
     save
   end
+  
+  def 
 end
