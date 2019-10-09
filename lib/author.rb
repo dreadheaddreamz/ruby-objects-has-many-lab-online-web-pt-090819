@@ -4,15 +4,15 @@ class Author
   
   def initialize(name)
     @name = name
-    @title = []
-  end
-  
-  def add_posts(posts)
-    posts.author = self
+    @posts = []
   end
   
   def posts
-    posts.all.select {|posts| posts.author == self}
+    Post.all.select{|posts| posts.author == self}
+  end
+  
+  def add_post(posts)
+    posts.author = self
   end
   
   def add_post_by_title(posts)
@@ -21,6 +21,6 @@ class Author
   end
   
   def self.post_count
-    Post.all.length
+    Post.all.length 
   end
 end
