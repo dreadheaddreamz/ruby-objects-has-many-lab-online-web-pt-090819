@@ -7,8 +7,4 @@ class Song
     @name = name
     save
   end
-  def song(name)
-    @song << song
-  end
-  
-end 
+end
