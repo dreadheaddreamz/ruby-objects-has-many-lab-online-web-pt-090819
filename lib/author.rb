@@ -15,8 +15,8 @@ class Author
     title.all.select {|title| title.author == self}
   end
   
-  def add_song_by_name(song)
-    song = Song.new(song)
+  def add_post_by_title(title)
+    song = new(song)
     add_song(song)
   end
   
